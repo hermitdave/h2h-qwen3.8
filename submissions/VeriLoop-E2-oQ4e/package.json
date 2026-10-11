@@ -1,0 +1,29 @@
+{
+  "name": "veri-loop-e2-oq4e-scheduler",
+  "version": "1.0.0",
+  "description": "Production-ready in-memory task scheduler: 1M tasks, priorities, execution timestamps, dependency tracking, cycle detection, dynamic updates, efficient next-executable retrieval.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --runInBand --testPathIgnorePatterns scale\\.test\\.ts",
+    "test:unit": "jest --runInBand --testPathIgnorePatterns scale\\.test\\.ts",
+    "test:scale": "jest --runInBand scale\\.test\\.ts",
+    "test:all": "jest --runInBand",
+    "verify": "npm run build && npm run test"
+  },
+  "keywords": [
+    "task-scheduler",
+    "priority-queue",
+    "dependency-graph",
+    "in-memory"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "typescript": "^5.5.4"
+  }
+}

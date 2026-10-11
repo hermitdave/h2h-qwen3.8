@@ -1,0 +1,20 @@
+{
+  "name": "h2h-task-scheduler",
+  "version": "1.0.0",
+  "description": "Production-ready in-memory task scheduler: 1M tasks, priorities, scheduled timestamps, dependency DAG, dynamic updates, cycle detection, next-executable retrieval.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.9"
+  }
+}
